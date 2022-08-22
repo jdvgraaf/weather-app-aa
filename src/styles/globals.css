@@ -1,3 +1,51 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+    --background: #ffffff;
+    --card-background: #eef6fb;
+    --text: #333339;
+
+    --font-size-l: 37px;
+    --font-size-m: 30px;
+    --font-size-xl: 45px;
+    --font-size-xxl: 49px;
+    --font-size-xxxl: 118px;
+
+    --font-family-arboria-light: "Arboria-Light", Helvetica;
+    --font-family-montserrat: "Montserrat", Helvetica;
+    --font-family-teko: "Teko", Helvetica;
+}
+
+.montserrat-light-onyx-30px {
+    color: var(--text);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-m);
+    font-style: normal;
+    font-weight: 300;
+}
+
+.teko-normal-onyx-49px {
+    color: var(--text);
+    font-family: var(--font-family-teko);
+    font-size: var(--font-size-xxl);
+    font-style: normal;
+    font-weight: 400;
+}
+
+.arboria-light-onyx-45px {
+    color: var(--text);
+    font-family: var(--font-family-arboria-light);
+    font-size: var(--font-size-xl);
+    font-style: normal;
+    font-weight: 300;
+}
+
+.montserrat-light-onyx-37px {
+    color: var(--text);
+    font-family: var(--font-family-montserrat);
+    font-size: var(--font-size-l);
+    font-style: normal;
+    font-weight: 300;
+}
