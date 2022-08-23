@@ -1,7 +1,7 @@
 import React from "react";
-import WeatherText from "../WeatherText";
+import WeatherText from "../WeatherText/WeatherText";
 import WeatherIcon from "../WeatherIcon/WeatherIcon";
-import Temperature from "../Temperature";
+import Temperature from "../Temperature/Tempurature";
 import "./DisplayCard.css";
 
 const roundingMap = {

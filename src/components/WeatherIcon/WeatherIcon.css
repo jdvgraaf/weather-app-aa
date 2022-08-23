@@ -6,26 +6,9 @@
     width: 175px;
   }
   
-  .weather-icon-2.weather-icon-3 {
-    align-self: unset;
-    height: 88px;
-    left: 86px;
-    position: absolute;
-    top: 500px;
-    width: 80px;
-  }
-  
   .weather-icon-2.weather-icon {
     align-self: unset;
     height: 88px;
-    margin-top: 31px;
-    width: 80px;
-  }
-  
-  .weather-icon-2.weather-icon-1 {
-    align-self: unset;
-    height: 88px;
-    margin-top: 20px;
     width: 80px;
   }
   

@@ -1,0 +1,10 @@
+.repeat-grid-4 {
+  align-items: flex-start;
+  display: flex;
+  min-width: 957px;
+}
+
+.future-card-container {
+  padding: 0px 5px;
+  position: relative;
+}

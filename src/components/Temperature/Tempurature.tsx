@@ -6,7 +6,7 @@ interface TemperatureProps {
 }
 
 export default ({ value }: TemperatureProps) => (
-  <div className="future-degrees-1">
-    <div className="text teko-normal-onyx-49px">{value}°</div>
+  <div className="teko-normal-onyx-49px">
+    {value}°
   </div>
 );

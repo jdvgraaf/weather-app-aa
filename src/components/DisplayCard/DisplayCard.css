@@ -3,11 +3,7 @@
   background-color: var(--card-background);
   display: flex;
   flex-direction: column;
-  left: 0;
-  min-height: 278px;
-  padding: 20px 69px;
-  position: absolute;
-  top: 0;
+  padding: 25px 0;
   width: 234px;
 }
 
@@ -17,9 +13,5 @@
 
 .display-card-round-bottom-right{
   border-radius: 0px 0px 20px 0px;
-}
-
-.display-card-2.display-card-1 {
-  padding: 22px 0;
 }
 
