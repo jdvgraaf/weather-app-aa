@@ -15,7 +15,7 @@ const Template = (args: DisplayCardProps) => (
 export const Middle = Template.bind({});
 Middle.args = {
     rounding:"Middle",
-    text: "Wed", 
+    week: "Wed", 
     iconSrc: "http://openweathermap.org/img/wn/10d@2x.png", 
     temperature: "-18", 
     className: "display-card-1"
