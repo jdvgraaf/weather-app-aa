@@ -1,7 +1,7 @@
 import React from "react";
-import WeatherText from "../WeatherText/WeatherText";
-import WeatherIcon from "../WeatherIcon/WeatherIcon";
-import Temperature from "../Temperature/Tempurature";
+import { WeatherText } from "../WeatherText/WeatherText";
+import { WeatherIcon } from "../WeatherIcon/WeatherIcon";
+import { Temperature } from "../Temperature/Tempurature";
 import "./DisplayCard.css";
 
 const roundingMap = {
@@ -20,8 +20,8 @@ export interface DisplayCardProps {
 
 export const DisplayCard = ({ rounding, weekday, iconSrc, temperature, className }: DisplayCardProps) => (
     <div className={`display-card-2 ${roundingMap[rounding]} ${className || ""}`}>
-        <WeatherText text={weekday}/>
+        <WeatherText text={weekday} />
         <WeatherIcon src={iconSrc} className="weather-icon-future" />
-        <Temperature className="temperature-future" value={temperature}/>
+        <Temperature className="temperature-future" value={temperature} />
     </div>
 );

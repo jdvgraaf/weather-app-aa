@@ -1,11 +1,11 @@
 import React from "react";
 import "./WeatherText.css";
 
-interface WeatherTextProps {
-    text: String
+export interface WeatherTextProps {
+    text: string
 }
 
-export default ({ text }: WeatherTextProps) => (
+export const WeatherText = ({ text }: WeatherTextProps) => (
     <div className="montserrat-light-onyx-30px">
         {text}
     </div>

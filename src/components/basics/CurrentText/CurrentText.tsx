@@ -1,10 +1,10 @@
 import React from "react";
 import "./CurrentText.css";
 
-interface CurrentTextProps {
-    text: String
+export interface CurrentTextProps {
+    text: string
 }
 
-export default ({ text }: CurrentTextProps) => (
+export const CurrentText = ({ text }: CurrentTextProps) => (
     <div className="montserrat-light-onyx-37px">{text}</div>
 );

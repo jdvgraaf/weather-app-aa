@@ -1,12 +1,12 @@
 import React from "react";
 import "./Temperature.css";
 
-interface TemperatureProps {
+export interface TemperatureProps {
   className: string
   value: string
 }
 
-export default ({ className, value }: TemperatureProps) => (
+export const Temperature = ({ className, value }: TemperatureProps) => (
   <div className={className}>
     {value}°
   </div>
