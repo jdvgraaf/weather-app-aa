@@ -13,9 +13,9 @@ const roundingMap = {
 export interface DisplayCardProps {
     rounding: 'Left' | 'Middle' | 'Right'
     weekday: 'Mon' | 'Tue' | 'Wed' | 'Thu' | 'Fri' | 'Sat' | 'Sun'
-    iconSrc: String
-    temperature: String
-    className: String
+    iconSrc: string
+    temperature: string
+    className: string
 }
 
 export const DisplayCard = ({ rounding, weekday, iconSrc, temperature, className }: DisplayCardProps) => (
