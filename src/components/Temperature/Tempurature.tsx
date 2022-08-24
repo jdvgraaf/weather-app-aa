@@ -2,11 +2,12 @@ import React from "react";
 import "./Temperature.css";
 
 interface TemperatureProps {
-  value: String
+  className: string
+  value: string
 }
 
-export default ({ value }: TemperatureProps) => (
-  <div className="teko-normal-onyx-49px">
+export default ({ className, value }: TemperatureProps) => (
+  <div className={className}>
     {value}°
   </div>
 );

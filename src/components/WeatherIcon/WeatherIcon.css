@@ -1,15 +1,16 @@
-.weather-icon-2 {
-    align-self: flex-end;
-    background-position: 50% 50%;
-    background-size: cover;
-    height: 192px;
-    width: 175px;
-  }
-  
-  .weather-icon-2.weather-icon {
-    align-self: unset;
-    height: 88px;
-    width: 80px;
-  }
-  
-  
+.weather-icon-current {
+  align-self: flex-end;
+  background-position: 50% 50%;
+  background-size: cover;
+  height: 192px;
+  width: 175px;
+  object-fit: fill
+}
+
+.weather-icon-future {
+  background-position: 50% 50%;
+  background-size: cover;
+  align-self: unset;
+  height: 88px;
+  width: 80px;
+}

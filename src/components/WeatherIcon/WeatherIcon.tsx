@@ -8,6 +8,6 @@ interface WeatherIconProps {
 
 export default ({ src, className }: WeatherIconProps) => (
     <div 
-        className={`weather-icon-2 ${className || ""}`} 
+        className={`${className || ""}`} 
         style={{ backgroundImage: `url(${src})` }}/>
 );

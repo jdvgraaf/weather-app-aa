@@ -20,8 +20,8 @@ export interface DisplayCardProps {
 
 export const DisplayCard = ({ rounding, weekday, iconSrc, temperature, className }: DisplayCardProps) => (
     <div className={`display-card-2 ${roundingMap[rounding]} ${className || ""}`}>
-        <WeatherText className="future-weekday-1" text={weekday}/>
-        <WeatherIcon src={iconSrc} className="weather-icon" />
-        <Temperature  value={temperature}/>
+        <WeatherText text={weekday}/>
+        <WeatherIcon src={iconSrc} className="weather-icon-future" />
+        <Temperature className="temperature-future" value={temperature}/>
     </div>
 );

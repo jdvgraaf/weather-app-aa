@@ -1,0 +1,30 @@
+.current-panel {
+  align-items: center;
+  background-color: var(--card-background);
+  display: flex;
+  flex-direction: column;
+  min-height: 395px;
+  padding: 43px 307px;
+  position: relative;
+  width: 957px;
+}
+
+.flex-row {
+  align-items: center;
+  display: flex;
+  margin-top: 10px;
+  min-width: 336px;
+  position: relative;
+}
+
+.overlap-group {
+  margin-left: 30px;
+  position: relative;
+  width: 132px;
+}
+
+.temperature-panel-current{
+  margin-bottom: -25.5px;
+  margin-right: -2px;
+  white-space: nowrap;
+}
