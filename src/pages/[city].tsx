@@ -3,7 +3,6 @@ import Head from "next/head";
 import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
 import { IndexScreen } from "../components/screens/IndexScreen/IndexScreen";
 import { trpc } from "../utils/trpc";
-import "../styles/globals.css";
 
 // This gets called on every request
 export const getServerSideProps: GetServerSideProps = async (context) => {

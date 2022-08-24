@@ -1,5 +1,4 @@
 import React from "react";
-import "./WeatherIcon.css";
 
 export interface WeatherIconProps {
     src: string
@@ -7,7 +6,6 @@ export interface WeatherIconProps {
 }
 
 export const WeatherIcon = ({ src, className }: WeatherIconProps) => (
-    <div 
-        className={`${className || ""}`} 
-        style={{ backgroundImage: `url(${src})` }}/>
+    <img src={src} 
+        className={`bg-center ${className || ""}`}/>
 );

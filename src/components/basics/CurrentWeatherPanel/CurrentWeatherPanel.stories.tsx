@@ -14,7 +14,7 @@ const Template : ComponentStory<typeof CurrentWeatherPanel> = (args: CurrentWeat
 
 export const Default = Template.bind({});
 Default.args = {
-    weatherTypeText: "Cloudy", 
+    weatherTypeText: "Clouds", 
     iconSrc: "http://openweathermap.org/img/wn/10d@4x.png", 
     temperature: "19", 
 };

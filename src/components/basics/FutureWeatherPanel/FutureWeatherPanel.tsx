@@ -1,6 +1,5 @@
 import React from "react";
 import { DisplayCard, DisplayCardProps } from "../DisplayCard/DisplayCard";
-import "./FutureWeatherPanel.css";
 
 const roundingMap = {
     "Left": "display-card-round-bottom-left",
@@ -20,8 +19,8 @@ export interface FutureWeatherPanelProps {
 }
 
 export const FutureWeatherPanel = ({ forecast }: FutureWeatherPanelProps) => (
-    <div className="repeat-grid-4">
-        <div className="future-card-container">
+    <div className="grid grid-cols-4 gap-x-1 w-full h-full">
+        <div className="w-full h-full">
             <DisplayCard
                 rounding="Left"
                 weekday={forecast[0].weekday}
@@ -30,7 +29,7 @@ export const FutureWeatherPanel = ({ forecast }: FutureWeatherPanelProps) => (
                 className="display-card-1"
             />
         </div>
-        <div className="future-card-container">
+        <div className="w-full h-full">
             <DisplayCard
                 rounding="Middle"
                 weekday={forecast[1].weekday}
@@ -39,7 +38,7 @@ export const FutureWeatherPanel = ({ forecast }: FutureWeatherPanelProps) => (
                 className="display-card-1"
             />
         </div>
-        <div className="future-card-container">
+        <div className="w-full h-full">
             <DisplayCard
                 rounding="Middle"
                 weekday={forecast[2].weekday}
@@ -48,7 +47,7 @@ export const FutureWeatherPanel = ({ forecast }: FutureWeatherPanelProps) => (
                 className="display-card-1"
             />
         </div>
-        <div className="future-card-container">
+        <div className="w-full h-full">
             <DisplayCard
                 rounding="Right"
                 weekday={forecast[3].weekday}

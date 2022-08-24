@@ -1,5 +1,4 @@
 import React from "react";
-import "./Temperature.css";
 
 export interface TemperatureProps {
   className: string
@@ -7,7 +6,7 @@ export interface TemperatureProps {
 }
 
 export const Temperature = ({ className, value }: TemperatureProps) => (
-  <div className={className}>
+  <div className={`text-text font-teko ${className}`}>
     {value}°
   </div>
 );

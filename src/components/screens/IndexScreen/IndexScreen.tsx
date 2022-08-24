@@ -1,9 +1,6 @@
 import React from "react";
-
 import { ForecastPanel, ForecastPanelProps} from "../../basics/ForecastPanel/ForecastPanel";
 import { CityNav, CityNavProps } from "../../basics/CityNav/CityNav";
-
-import "./IndexScreen.css";
 
 export interface IndexScreenProps {
     cityNav: CityNavProps
@@ -11,8 +8,8 @@ export interface IndexScreenProps {
 }
 
 export const IndexScreen = ({cityNav, weather} : IndexScreenProps) => (
-    <div className="app-layout">
-        <div className="pad-nav">
+    <div className="w-[970px]">
+        <div className="pb-12">
             <CityNav {...cityNav}/>
         </div>
         <ForecastPanel {...weather}/>    

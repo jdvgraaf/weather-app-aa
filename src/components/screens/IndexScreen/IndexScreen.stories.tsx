@@ -20,7 +20,7 @@ Default.args = {
     },
     weather: {
         currentWeather: {
-            weatherTypeText: "Cloudy",
+            weatherTypeText: "Clouds",
             iconSrc: "http://openweathermap.org/img/wn/10d@4x.png",
             temperature: "19"
         },
