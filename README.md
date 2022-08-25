@@ -14,4 +14,4 @@ Process
 9. Test weather api and build functionality to retrive and parse data
 10. Deploy to vercel
 
-[App Deployed Here](weather-app-aa.vercel.app)
+[App Deployed Here](https://weather-app-aa.vercel.app/)
