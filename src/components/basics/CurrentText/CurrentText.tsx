@@ -5,5 +5,5 @@ export interface CurrentTextProps {
 }
 
 export const CurrentText = ({ text }: CurrentTextProps) => (
-    <div className="text-text font-montserrat text-4xl">{text}</div>
+    <div className="text-text font-montserrat text-5xl">{text}</div>
 );

@@ -3,12 +3,13 @@ import { CurrentWeatherPanel, CurrentWeatherPanelProps } from "../CurrentWeather
 import { FutureWeatherPanel, FutureWeatherPanelProps } from "../FutureWeatherPanel/FutureWeatherPanel";
 
 export interface ForecastPanelProps {
+    className: string
     currentWeather: CurrentWeatherPanelProps
     futureWeather: FutureWeatherPanelProps
 }
 
-export const ForecastPanel = ({ currentWeather, futureWeather }: ForecastPanelProps) => (
-    <div className="p-1.5 bg-background rounded-3xl shadow-2xl h-[689px]">
+export const ForecastPanel = ({className, currentWeather, futureWeather }: ForecastPanelProps) => (
+    <div className={`p-1.5 bg-background rounded-3xl shadow-2xl ${className}`}>
         <div className="flex h-3/5">
             <CurrentWeatherPanel {...currentWeather} />
         </div>

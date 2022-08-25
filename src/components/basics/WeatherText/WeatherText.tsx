@@ -5,7 +5,7 @@ export interface WeatherTextProps {
 }
 
 export const WeatherText = ({ text }: WeatherTextProps) => (
-    <div className="text-text font-montserrat text-3xl">
+    <div className="text-text font-montserrat font-extralight text-4xl">
         {text}
     </div>
 );

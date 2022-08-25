@@ -12,15 +12,11 @@ export interface CurrentWeatherPanelProps {
 export const CurrentWeatherPanel = ({ weatherTypeText, iconSrc, temperature }: CurrentWeatherPanelProps) => (
     <div className="rounded-t-3xl items-center justify-center flex flex-col w-full mb-1 bg-card-background" >
         <CurrentText text="Today" />
-        <div className="flex mt-2 items-center">
-            <WeatherIcon className="w-64 h-64" src={iconSrc} />
+        <div className="flex mt-2 items-center -mt-12 -ml-16">
+            <WeatherIcon className="w-[400px] h-[400px]" src={iconSrc} />
             <div className="ml-6">
-                <div className="-mb-5">
-                    <Temperature className="text-8axl" value={temperature} />
-                </div>
-                <div>
-                    <CurrentText  text={weatherTypeText} />
-                </div>
+                <Temperature className="text-[150px] -mt-10 -mb-10" value={temperature} />
+                <CurrentText text={weatherTypeText} />
             </div>
         </div>
     </div>
