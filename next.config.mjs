@@ -9,11 +9,20 @@ import { env } from "./src/env/server.mjs";
  * @constraint {{import('next').NextConfig}}
  */
 function defineNextConfig(config) {
-  return config;
+  return config
 }
 
 export default defineNextConfig({
   reactStrictMode: true,
   swcMinify: true,
   optimizeFonts: false,
+  async redirects() {
+    return [
+      {
+        source: '/',
+        destination: '/Bangalore',
+        permanent: true,
+      },
+    ]
+  },
 });

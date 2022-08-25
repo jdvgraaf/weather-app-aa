@@ -20,7 +20,7 @@ export interface DisplayCardProps {
 export const DisplayCard = ({ rounding, weekday, iconSrc, temperature, className }: DisplayCardProps) => (
     <div className={`flex flex-col bg-card-background h-full justify-center items-center ${roundingMap[rounding]}`}>
         <WeatherText text={weekday} />
-        <WeatherIcon src={iconSrc} className="w-32 h-32" />
-        <Temperature className="text-6xl" value={temperature} />
+        <WeatherIcon src={iconSrc} className="w-24 h-24" />
+        <Temperature className="text-4xl" value={temperature} />
     </div>
 );
