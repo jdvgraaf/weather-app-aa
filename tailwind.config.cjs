@@ -6,7 +6,7 @@ module.exports = {
       'background': '#ffffff',
       'card-background': '#eef6fb',
       'text': '#333339',
-      'selected-nav-text': '#5FB0E8'
+      'selected-nav-text': '#ec6f4c'
     },
     fontFamily: {
       "arboria-light": ["Arboria-Light", "Helvetica"],

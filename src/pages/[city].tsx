@@ -50,7 +50,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
       weather: {
         currentWeather: {
           weatherTypeText: data.current.weather[0].main,
-          iconSrc: `http://openweathermap.org/img/wn/${data.current.weather[0].icon}@4x.png`,
+          iconSrc: `https://openweathermap.org/img/wn/${data.current.weather[0].icon}@4x.png`,
           temperature: `${Math.round(data.current.temp)}`
         },
         futureWeather: {
@@ -60,7 +60,7 @@ export const getServerSideProps: GetServerSideProps = async (context) => {
             }
             return accumulator.concat({
               weekday: moment.unix(day.dt).format('ddd'),
-              iconSrc: `http://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`,
+              iconSrc: `https://openweathermap.org/img/wn/${day.weather[0].icon}@2x.png`,
               temperature: `${Math.round(day.temp.day)}`,
             })
           }, [])
