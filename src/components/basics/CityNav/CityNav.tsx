@@ -10,7 +10,7 @@ export interface CityNavProps {
 export const CityNav = ({ className, cities, selectedCity }: CityNavProps) => (
     <div className={`grid grid-cols-3 items-center text-center ${className}`}>
         {cities.map((city, index) => (
-            <h1 key={index} className={city === selectedCity ? "arboria-medium-onyx-45px" : "arboria-light-onyx-45px"}>
+            <h1 key={index} className={city === selectedCity ? "font-arboria-medium text-selected-nav-text text-5xl" : "font-arboria-light text-text text-5xl"}>
                 <Link href={`/${city}`}>
                     {city.toUpperCase()}
                 </Link>
