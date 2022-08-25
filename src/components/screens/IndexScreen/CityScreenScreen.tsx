@@ -1,5 +1,5 @@
 import React from "react";
-import { ForecastPanel, ForecastPanelProps} from "../../basics/ForecastPanel/ForecastPanel";
+import { ForecastPanel, ForecastPanelProps} from "../../basics/WeatherPanel/WeatherPanel";
 import { CityNav, CityNavProps } from "../../basics/CityNav/CityNav";
 
 export interface IndexScreenProps {

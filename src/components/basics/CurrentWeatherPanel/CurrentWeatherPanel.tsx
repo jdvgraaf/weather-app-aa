@@ -1,7 +1,7 @@
 import React from "react";
 import { CurrentText } from "../CurrentText/CurrentText";
 import { WeatherIcon } from "../WeatherIcon/WeatherIcon";
-import { Temperature } from "../Temperature/Tempurature";
+import { Temperature } from "../TemperatureText/TempuratureText";
 
 export interface CurrentWeatherPanelProps {
     weatherTypeText: string

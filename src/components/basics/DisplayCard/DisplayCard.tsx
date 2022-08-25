@@ -1,7 +1,7 @@
 import React from "react";
-import { WeatherText } from "../WeatherText/WeatherText";
+import { WeatherText } from "../WeekdayText/WeekdayText";
 import { WeatherIcon } from "../WeatherIcon/WeatherIcon";
-import { Temperature } from "../Temperature/Tempurature";
+import { Temperature } from "../TemperatureText/TempuratureText";
 
 const roundingMap = {
     "Left": "rounded-bl-3xl",
