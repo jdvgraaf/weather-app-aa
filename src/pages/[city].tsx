@@ -3,10 +3,40 @@ import { GetServerSideProps, InferGetServerSidePropsType } from 'next'
 import { IndexScreen } from "../components/screens/IndexScreen/IndexScreen";
 import moment from 'moment'
 
+interface Coordinates {
+  id: string
+  lat: number;
+  lon: number;
+}
+
+const geolocation: Array<Coordinates> = [{
+    id: "Bogota",
+    lat: 4.7110,
+    lon: -74.0721
+  },{
+    id: "Cairo",
+    lat: 30.0444,
+    lon: 31.2357
+  }, {
+    id: "Bangalore",
+    lat: 12.9716,
+    lon: 77.5946
+  }
+]
+
 // This gets called on every request
 export const getServerSideProps: GetServerSideProps = async (context) => {
   // Fetch data from external API
-  const res = await fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=33.44&lon=-94.04&exclude=hourly,minutely,alerts&appid=${process.env.API_KEY}&units=metric`)
+
+  const coordinates = geolocation.find(({id} : Coordinates) => id === context.params.city)
+  if(coordinates === undefined){
+    return {
+      props:{
+        error: true
+      }
+    }
+  }
+  const res = await fetch(`https://api.openweathermap.org/data/3.0/onecall?lat=${coordinates.lat}&lon=${coordinates.lon}&exclude=hourly,minutely,alerts&appid=${process.env.API_KEY}&units=metric`)
   const data = await res.json()
   // Pass data to the page via props
   return {
