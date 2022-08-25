@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { DisplayCard, DisplayCardProps } from "./DisplayCard";
+import { DisplayCard, DisplayCardProps } from "./FutureWeatherCard";
 
 export default {
     title: 'DisplayCard',

@@ -1,5 +1,5 @@
 import React from "react";
-import { DisplayCard, DisplayCardProps } from "../DisplayCard/DisplayCard";
+import { DisplayCard, DisplayCardProps } from "../FutureWeatherCard/FutureWeatherCard";
 
 const roundingMap = {
     "Left": "display-card-round-bottom-left",
