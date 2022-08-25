@@ -1,7 +1,7 @@
 import React from "react";
 import { CurrentText } from "../CurrentText/CurrentText";
 import { WeatherIcon } from "../WeatherIcon/WeatherIcon";
-import { Temperature } from "../Temperature/Tempurature";
+import { Temperature } from "../TemperatureText/TempuratureText";
 
 export interface CurrentWeatherPanelProps {
     weatherTypeText: string
@@ -10,13 +10,15 @@ export interface CurrentWeatherPanelProps {
 }
 
 export const CurrentWeatherPanel = ({ weatherTypeText, iconSrc, temperature }: CurrentWeatherPanelProps) => (
-    <div className="rounded-t-3xl items-center justify-center flex flex-col w-full mb-1 bg-card-background" >
-        <CurrentText text="Today" />
-        <div className="flex mt-2 items-center -mt-12 -ml-16">
-            <WeatherIcon className="w-[400px] h-[400px]" src={iconSrc} />
-            <div className="ml-6">
-                <Temperature className="text-[150px] -mt-10 -mb-10" value={temperature} />
-                <CurrentText text={weatherTypeText} />
+    <div className="rounded-t-3xl justify-center flex flex-col w-full mb-1 bg-card-background" >
+        <div className="flex flex-col items-center justify-center">
+            <CurrentText className="" text="Today" />
+            <div className="flex items-center -ml-24 h-52">
+                <WeatherIcon className="w-[250px] h-[250px]" src={iconSrc} />
+                <div>
+                    <Temperature className="text-8xl -mt-5 " value={temperature} />
+                    <CurrentText className="" text={weatherTypeText} />
+                </div>
             </div>
         </div>
     </div>

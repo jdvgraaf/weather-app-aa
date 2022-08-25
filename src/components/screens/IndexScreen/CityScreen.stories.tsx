@@ -1,6 +1,6 @@
 import React from 'react';
 import { ComponentMeta, ComponentStory } from '@storybook/react';
-import { IndexScreen, IndexScreenProps } from "./IndexScreen";
+import { IndexScreen, IndexScreenProps } from "./CityScreenScreen";
 
 export default {
     title: 'IndexScreen',
